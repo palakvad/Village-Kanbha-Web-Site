@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <!-- META SECTION -->
+    <title>Kanbha | આપણું કણભા </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+    <!-- END META SECTION -->
+    <link rel="stylesheet" type="text/css" href="css/revolution-slider/extralayers.css"
+        media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/revolution-slider/settings.css"
+        media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- page container -->
+    <div class="page-container">
+        <!-- page header -->
+        <div class="page-header">
+            <!-- page header holder -->
+            <div class="page-header-holder">
+                <!-- page logo -->
+                <div class="logo">
+                    <a href="Default.aspx">આપણું કણભા - Kanbha.Com</a>
+                </div>
+                <!-- ./page logo -->
+                <!-- search -->
+                <div class="search">
+                    <%-- <div class="search-button">
+                        <span class="fa fa-search"></span>
+                    </div>
+                    <div class="search-container animated fadeInDown">
+                        <form action="#" method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search..." />
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>--%>
+                </div>
+                <!-- ./search -->
+                <!-- nav mobile bars -->
+                <div class="navigation-toggle">
+                    <br />
+                    <br />
+                    <div class="navigation-toggle-button">
+                        <span class="fa fa-bars"></span>
+                    </div>
+                </div>
+                <!-- ./nav mobile bars -->
+                <!-- navigation -->
+                <ul class="navigation">
+                    <li><a href="Default.aspx">Home</a> </li>
+                    <li><a href="History.aspx">History</a> </li>
+                
+                    <li><a href="#">Gallery</a>
+                      <ul>
+                            <li><a href="Special/Gallery.aspx">General</a></li>
+                            <li><a href="Special/NavratriGallery.aspx">નવરાત્રી</a></li>
+                             <li><a href="Special/GaneshGallery.aspx">ગણેશ ઉત્સવ</a></li>
+                            <li><a href="Special/MedoGallery.aspx">મેળો</a></li>
+                             <li><a href="Special/VolleyballGallery.aspx"></a>વોલીબોલ ટુર્નામેન્ટ</li>
+                           
+                        </ul> 
+                    </li>
+                    <li><a href="Special/Members.aspx">Members' Info</a></li>
+                    <li><a href="Special/Contactus.aspx">Contact Us</a></li>
+                </ul>
+                <!-- ./navigation -->
+            </div>
+            <!-- ./page header holder -->
+        </div>
+        <!-- ./page header -->
+        <!-- page content -->
+        <div class="page-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="page-footer">
+            <div class="page-footer-wrap bg-darken-gray">
+                <!-- page footer holder -->
+                <div class="page-footer-holder">
+                    <!-- copyright -->
+                    <div class="copyright">
+                        &copy; 2015 Powered by <a href="https://www.facebook.com/devashishpatel2910">દેવાશિષ ઘનશ્યામ પટેલ</a> - All Rights Reserved
+                    </div>
+                    <!-- ./copyright -->
+                    <!-- social links -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/groups/kanbharockers420/151274551609640/?notif_t=like"><span class="fa fa-facebook"></span></a>
+                        <%-- <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                        <a href="#"><span class="fa fa-vimeo-square"></span></a>
+                        <a href="#"><span class="fa fa-dribbble"></span></a>--%>
+                    </div>
+                    <!-- ./social links -->
+                </div>
+                <!-- ./page footer holder -->
+            </div>
+            <!-- ./page footer wrap -->
+        </div>
+        <!-- ./page footer -->
+    </div>
+    <!-- ./page container -->
+    <!-- page scripts -->
+    <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins/mixitup/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/plugins/appear/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/plugins/revolution-slider/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="js/plugins/revolution-slider/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <!-- ./page scripts -->
+</body>
+</html>
