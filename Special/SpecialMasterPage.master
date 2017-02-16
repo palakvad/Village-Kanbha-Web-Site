@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SpecialMasterPage.master.cs"
+    Inherits="Special_SpecialMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <!-- META SECTION -->
+    <title>Kanbha | આપણું કણભા </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon" />
+    <!-- END META SECTION -->
+    <!-- CSS INCLUDE -->
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css" />
+    <!-- EOF CSS INCLUDE -->
+   
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-sidebar">
+            <ul class="x-navigation">
+                <li class="xn-logo" ><a href="../Default.aspx" >Kanbha.com</a> <a href="#" class="x-navigation-control">
+                </a></li>
+                <li><a href="../Default.aspx"><span class="fa fa-desktop"></span><span class="xn-text">
+                    Home</span></a> </li>
+                <li><a href="History.aspx"><span class="fa fa-calendar"></span><span class="xn-text">History</span></a>
+                </li>
+                <li><a href="#"><span class="fa fa-picture-o"></span><span class="xn-text">Gallery</span></a>
+                    <ul>
+                        <li><a href="Gallery.aspx"><span class="fa fa-align-justify"></span>General</a></li>
+                        <li><a href="NavratriGallery.aspx"><span class="fa fa-align-justify"></span>નવરાત્રી</a></li>
+                        <li><a href="GaneshGallery.aspx"><span class="fa fa-align-justify"></span>ગણેશ ઉત્સવ</a></li>
+                        <li><a href="MedoGallery.aspx"><span class="fa fa-align-justify"></span>મેળો</a></li>
+                        <li><a href="VolleyballGallery.aspx"><span class="fa fa-align-justify"></span>વોલીબોલ ટુર્નામેન્ટ</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="Members.aspx"><span class="fa fa-users"></span><span class="xn-text">Members' Info</span></a>
+                </li>
+                <li><a href="Contactus.aspx"><span class="fa fa-phone"></span><span class="xn-text">Contact Us</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         
+               
+               
+               
+        </div>
+    
+           
+               
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+   
+    <!-- END PLUGINS -->
+    <!-- START THIS PAGE PLUGINS-->
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/tableexport/tableExport.js"></script>
+    <script type="text/javascript" src="js/plugins/tableexport/jquery.base64.js"></script>
+    <script type="text/javascript" src="js/plugins/tableexport/html2canvas.js"></script>
+    <script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/sprintf.js"></script>
+    <script type="text/javascript" src="js/plugins/tableexport/jspdf/jspdf.js"></script>
+    <script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/base64.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+
+    <!-- END THIS PAGE PLUGINS-->
+    <!-- START TEMPLATE -->
+    <%--  <script type="text/javascript" src="js/settings.js"></script>
+    --%>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+    <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->
+</body>
+</html>
